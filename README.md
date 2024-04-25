@@ -1,7 +1,5 @@
 <div align=120px>
 Olá Mundo, Sou o Gustavo Espenchitt<br>
-- Estudando Python<br>
-- Estudando Java<br>
 - Computer Engineering<br>
 </div>
 <br>
@@ -15,7 +13,7 @@ Olá Mundo, Sou o Gustavo Espenchitt<br>
   <img align="center" alt="java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
   <img align="center" alt="c" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
   <img align="center" alt="arduino "height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
-  <img align="center" alt="mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg">
+  <img align="center" alt="mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg">
   
   ##
  
