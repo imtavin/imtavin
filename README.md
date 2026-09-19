@@ -1,26 +1,24 @@
-<div align=120px>
-Olá Mundo, Sou o Gustavo Espenchitt<br>
-- Computer Engineering<br>
-</div>
-<br>
-<div align="center">
-  <a href="https://github.com/imtavin">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/index/?username=imtavin&show_icons=true&theme=dark&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imtavin&theme=dark&layout=compact&langs_count=8"/>
-</div>
-<div style="display: inline_block"><br>
-  <img align="center" alt="py" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img align="center" alt="java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-  <img align="center" alt="c" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg">
-  <img align="center" alt="arduino "height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
-  <img align="center" alt="mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg">
-  
-  ##
- 
- <h3>Redes Sociais</h3>
- 
-<div> 
-  <a href="https://instagram.com/tavx13" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href = "mailto:gustavo.t.espenchitt@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/gustavo-espenchitt" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+# Gustavo Tavares Espenchitt
+
+Engenheiro de Computação com foco em sistemas embarcados, Linux embarcado e integração entre software e hardware.
+
+## Projeto em destaque
+
+### Strawberry AI
+
+Protótipo acadêmico de sistema embarcado para detecção e classificação de pragas em morangos. O projeto executa inferência local com TensorFlow Lite em Raspberry Pi e reúne captura de imagens, comunicação TCP/UDP e interface gráfica para operação em campo.
+
+O desenvolvimento foi realizado em equipe. Minhas contribuições registradas nos repositórios incluem trabalho no backend Python, integração da inferência, configuração de rede e logs, além de telas e componentes da interface gráfica.
+
+- [Visão geral e arquitetura](https://github.com/imtavin/strawberry-ai)
+- [Backend Python](https://github.com/imtavin/strawberry-backend-python)
+- [Interface gráfica](https://github.com/imtavin/strawberry-frontend-python)
+
+## Tecnologias documentadas nos projetos
+
+Python, Raspberry Pi, Linux, TensorFlow Lite, visão computacional, TCP/UDP, Git e integração entre hardware e software.
+
+## Contato
+
+- [LinkedIn](https://www.linkedin.com/in/gustavo-espenchitt/)
+- [E-mail](mailto:gustavo.t.espenchitt@gmail.com)
