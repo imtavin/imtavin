@@ -19,6 +19,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Prepare embedded systems profile animation
+        run: mkdir -p dist && cp assets/embedded-systems-scope.svg dist/embedded-systems-scope.svg
+
       # Snake Animation
       - uses: Platane/snk@master
         id: snake-gif
@@ -26,9 +29,6 @@ jobs:
           github_user_name: imtavin
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
-
-      - name: Add embedded systems profile animation
-        run: cp assets/embedded-systems-scope.svg dist/embedded-systems-scope.svg
 
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
