@@ -16,6 +16,9 @@ jobs:
     name: Jobs to update datas
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
       # Snake Animation
       - uses: Platane/snk@master
         id: snake-gif
@@ -27,15 +30,6 @@ jobs:
       - name: Add embedded systems profile animation
         run: cp assets/embedded-systems-scope.svg dist/embedded-systems-scope.svg
 
-      - run: git status
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-          force: true
-      
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: output
