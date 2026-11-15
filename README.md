@@ -2,6 +2,32 @@
 
 Engenheiro de Computação com foco em software embarcado, Linux embarcado, integração de sensores e validação de software.
 
+![Animação de uma placa com osciloscópio que representa a trajetória de Gustavo em automação, eletrônica, software embarcado e validação](https://raw.githubusercontent.com/imtavin/imtavin/output/embedded-systems-scope.svg)
+
+<details>
+<summary>Automação e integração · CLPs · sensores · redes industriais</summary>
+
+Atuei com painéis elétricos, CLPs, redes industriais e integração de sensores em aplicações de automação.
+</details>
+
+<details>
+<summary>Hardware e sensores · ESP32 · Raspberry Pi · eletrônica</summary>
+
+Na Bosch, participei de projetos com ESP32 e Raspberry Pi e de uma célula de visão computacional com robô KUKA. No TCC Strawberry AI, contribuí da modelagem 3D à integração eletrônica.
+</details>
+
+<details>
+<summary>Software embarcado · Java · Embedded Linux · telemetria</summary>
+
+Na Fiscaltech, desenvolvo e mantenho software Java em Linux embarcado para equipamentos de fiscalização e pesagem veicular, integrando módulos de medição e sensores.
+</details>
+
+<details>
+<summary>Testes e validação · cenários de campo · CAN · K-Line</summary>
+
+Desenvolvo testes automatizados, reproduzo cenários de campo e valido o comportamento no equipamento. Na pós-graduação da UTFPR, estudo arquitetura ARM e redes veiculares CAN e K-Line.
+</details>
+
 ## Projetos
 
 ### C, ESP32 e FreeRTOS
