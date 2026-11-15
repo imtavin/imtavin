@@ -1,6 +1,12 @@
 name: Generate Datas
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/embedded-systems-scope.svg"
+      - ".github/workflows/cobra.yml"
   schedule: # execute every 6 hours
     - cron: "0 */6 * * *"
   workflow_dispatch:
@@ -17,6 +23,9 @@ jobs:
           github_user_name: imtavin
           gif_out_path: dist/github-contribution-grid-snake.gif
           svg_out_path: dist/github-contribution-grid-snake.svg
+
+      - name: Add embedded systems profile animation
+        run: cp assets/embedded-systems-scope.svg dist/embedded-systems-scope.svg
 
       - run: git status
 
