@@ -1,32 +1,8 @@
 # Gustavo Tavares Espenchitt
 
-Engenheiro de Computação com foco em software embarcado, Linux embarcado, integração de sensores e validação de software.
+Sou engenheiro de computação e técnico em Mecatrônica. Desde pequeno, gosto de entender como as coisas funcionam e resolver problemas, às vezes desmontando algo para descobrir. Me aventuro no software, mas é com hardware e firmware que me sinto em casa.
 
-![Animação de uma placa com osciloscópio que representa a trajetória de Gustavo em automação, eletrônica, software embarcado e validação](https://raw.githubusercontent.com/imtavin/imtavin/output/embedded-systems-scope.svg)
-
-<details>
-<summary>Automação e integração · CLPs · sensores · redes industriais</summary>
-
-Atuei com painéis elétricos, CLPs, redes industriais e integração de sensores em aplicações de automação.
-</details>
-
-<details>
-<summary>Hardware e sensores · ESP32 · Raspberry Pi · eletrônica</summary>
-
-Na Bosch, participei de projetos com ESP32 e Raspberry Pi e de uma célula de visão computacional com robô KUKA. No TCC Strawberry AI, contribuí da modelagem 3D à integração eletrônica.
-</details>
-
-<details>
-<summary>Software embarcado · Java · Embedded Linux · telemetria</summary>
-
-Na Fiscaltech, desenvolvo e mantenho software Java em Linux embarcado para equipamentos de fiscalização e pesagem veicular, integrando módulos de medição e sensores.
-</details>
-
-<details>
-<summary>Testes e validação · cenários de campo · CAN · K-Line</summary>
-
-Desenvolvo testes automatizados, reproduzo cenários de campo e valido o comportamento no equipamento. Na pós-graduação da UTFPR, estudo arquitetura ARM e redes veiculares CAN e K-Line.
-</details>
+![Osciloscópio em roxo, representando sistemas embarcados](https://raw.githubusercontent.com/imtavin/imtavin/output/oscilloscope-purple.gif)
 
 ## Projetos
 
@@ -52,11 +28,21 @@ Minhas contribuições registradas nos repositórios incluem trabalho no backend
 - [Backend Python](https://github.com/imtavin/strawberry-backend-python)
 - [Interface gráfica](https://github.com/imtavin/strawberry-frontend-python)
 
-## Tecnologias demonstradas
+## Tecnologias que a gente desenrola
 
-C, C++, ESP-IDF, FreeRTOS, ESP32, Embedded Linux, Raspberry Pi, TensorFlow Lite, UART / RS-485, CRC-16, Python, Git, testes de host e integração de sensores.
+[![C, C++, Java, Python, Linux, Raspberry Pi, TensorFlow e Git](https://skillicons.dev/icons?i=c,cpp,java,py,linux,raspberrypi,tensorflow,git&perline=8)](https://skillicons.dev)
+
+ESP32 · ESP-IDF · FreeRTOS · UART / RS-485 · CRC-16 · testes em host · integração de sensores.
+
+## GitHub Stats
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/imtavin/imtavin/output/github-stats.svg" alt="Estatísticas do GitHub de Gustavo" width="450" />
+</p>
 
 ## Contato
 
 - [LinkedIn](https://www.linkedin.com/in/gustavo-espenchitt/)
 - [E-mail](mailto:gustavo.t.espenchitt@gmail.com)
+
+![Animação de números binários em estilo Matrix](https://raw.githubusercontent.com/imtavin/imtavin/output/binary-rain.gif)
