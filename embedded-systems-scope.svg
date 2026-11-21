@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360" fill="none">
+  <title>Do sinal de campo ao software embarcado — Gustavo Tavares Espenchitt</title>
+  <desc>Banner animado em estilo de placa de bancada, com uma forma de onda ilustrativa e controles que destacam automação, sensores, Linux embarcado e validação.</desc>
+  <defs>
+    <linearGradient id="backdrop" x1="0" y1="0" x2="1400" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A20"/>
+      <stop offset=".55" stop-color="#14272A"/>
+      <stop offset="1" stop-color="#10191F"/>
+    </linearGradient>
+    <linearGradient id="board-face" x1="42" y1="22" x2="1360" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3538"/>
+      <stop offset=".6" stop-color="#132A2E"/>
+      <stop offset="1" stop-color="#102328"/>
+    </linearGradient>
+    <linearGradient id="screen-face" x1="515" y1="83" x2="1050" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102026"/>
+      <stop offset="1" stop-color="#081418"/>
+    </linearGradient>
+    <linearGradient id="wave-color" x1="558" y1="180" x2="1017" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB65D"/>
+      <stop offset=".5" stop-color="#F5D889"/>
+      <stop offset="1" stop-color="#67E4D5"/>
+    </linearGradient>
+    <pattern id="back-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#A2C7B7" stroke-opacity=".045"/>
+    </pattern>
+    <pattern id="scope-grid" width="46" height="32" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V32" stroke="#80CFC0" stroke-opacity=".16"/>
+      <circle cx="0" cy="0" r="1.2" fill="#A6E3D6" fill-opacity=".28"/>
+    </pattern>
+    <filter id="soft-glow" x="-25%" y="-100%" width="150%" height="300%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="scope-clip"><rect x="528" y="108" width="510" height="150" rx="5"/></clipPath>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .mono { font-family: "Cascadia Code", Consolas, monospace; }
+      .flow {
+        stroke-dasharray: 5 18;
+        animation: signal-travel 4.6s linear infinite;
+      }
+      .spark { animation: spark-pulse 1.8s ease-in-out infinite; }
+      .control { cursor: pointer; }
+      .control .cap, .control .indicator { transition: fill .18s ease, stroke .18s ease, filter .18s ease; }
+      .control:hover .cap { fill: #315B55; stroke: #9AF2DE; }
+      .control:hover .indicator { fill: #FFE2A1; filter: url(#soft-glow); }
+      @keyframes signal-travel { to { stroke-dashoffset: -92; } }
+      @keyframes spark-pulse { 50% { opacity: .42; } }
+      @media (prefers-reduced-motion: reduce) {
+        .flow, .spark { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1400" height="360" rx="22" fill="url(#backdrop)"/>
+  <rect width="1400" height="360" rx="22" fill="url(#back-grid)"/>
+  <path d="M22 46H1378V314H22" stroke="#85B6A8" stroke-opacity=".12"/>
+
+  <!-- Placa de circuito com cantos chanfrados -->
+  <path d="M72 20H1328L1380 72V288L1328 340H72L20 288V72L72 20Z" fill="url(#board-face)" stroke="#52766E" stroke-opacity=".82" stroke-width="1.5"/>
+  <path d="M78 29H1323L1371 77V283L1323 331H78L29 283V77L78 29Z" stroke="#A8D8C5" stroke-opacity=".12"/>
+
+  <!-- Fixadores e trilhas -->
+  <g fill="#0C1A1E" stroke="#83A398" stroke-opacity=".7">
+    <circle cx="55" cy="55" r="9"/><circle cx="1345" cy="55" r="9"/>
+    <circle cx="55" cy="305" r="9"/><circle cx="1345" cy="305" r="9"/>
+  </g>
+  <g stroke="#76968C" stroke-opacity=".76" stroke-width="1.2">
+    <path d="m51 51 8 8m0-8-8 8m1288-8 8 8m0-8-8 8m-1288 242 8 8m0-8-8 8m1288-8 8 8m0-8-8 8"/>
+  </g>
+  <g stroke="#59AC9D" stroke-opacity=".31" stroke-width="2">
+    <path d="M402 95H450V123H479M405 265H459V241H482M1049 95H1083V119H1106M1049 265H1082V240H1108"/>
+    <path d="M438 104h12m-12 8h20m-17 146h19m-14-8h12M1080 105h15m-9 8h14m-15 122h19m-13 8h14"/>
+  </g>
+  <g fill="#7BDECA" fill-opacity=".72">
+    <circle cx="479" cy="123" r="3"/><circle cx="482" cy="241" r="3"/>
+    <circle cx="1106" cy="119" r="3"/><circle cx="1108" cy="240" r="3"/>
+  </g>
+
+  <!-- Identidade / chamada -->
+  <g>
+    <rect x="70" y="66" width="30" height="30" rx="7" fill="#183B3A" stroke="#73DFD0" stroke-opacity=".72"/>
+    <path d="M76 81h5l3-7 4 14 4-7h5" stroke="#7BE8D7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="113" y="77" fill="#80E0D2" font-size="10" letter-spacing="1.8" class="mono">HARDWARE <tspan fill="#728C85">↔</tspan> SOFTWARE</text>
+    <text x="70" y="145" fill="#F4F0DF" font-size="37" font-weight="590" letter-spacing="-1.7">Do sinal de campo</text>
+    <text x="70" y="190" fill="#F4F0DF" font-size="37" font-weight="590" letter-spacing="-1.7">ao software <tspan fill="#FFBD69">embarcado.</tspan></text>
+    <text x="73" y="227" fill="#AFBEB7" font-size="12.5">Engenharia de Computação · Sistemas Embarcados</text>
+    <text x="73" y="267" fill="#77928A" font-size="9" letter-spacing="1.1" class="mono">AUTOMAÇÃO  /  ELETRÔNICA  /  LINUX  /  VALIDAÇÃO</text>
+  </g>
+
+  <!-- Display de osciloscópio -->
+  <rect x="507" y="61" width="558" height="238" rx="14" fill="#091518" stroke="#6D9689" stroke-opacity=".58" stroke-width="1.4"/>
+  <rect x="516" y="70" width="540" height="220" rx="9" fill="url(#screen-face)" stroke="#284643"/>
+  <text x="535" y="94" fill="#9AB2A8" font-size="8" letter-spacing="1.6" class="mono">SIGNAL VIEW <tspan fill="#526D68">/</tspan> FORMA DE ONDA ILUSTRATIVA</text>
+  <text x="1038" y="94" text-anchor="end" fill="#71DFD0" font-size="8" letter-spacing="1.2" class="mono">CANAL A <tspan fill="#617A75">·</tspan> DEMO</text>
+  <g clip-path="url(#scope-clip)">
+    <rect x="528" y="108" width="510" height="150" fill="url(#scope-grid)"/>
+    <path d="M528 183H1038M783 108V258" stroke="#A4CCBB" stroke-opacity=".18" stroke-dasharray="3 7"/>
+    <path d="M538 191H595V142H652V191H709V142H766V191H823V142H880V191H937V142H994V191H1033" stroke="#FFB65D" stroke-opacity=".28" stroke-width="10" stroke-linejoin="round" filter="url(#soft-glow)"/>
+    <path d="M538 191H595V142H652V191H709V142H766V191H823V142H880V191H937V142H994V191H1033" stroke="url(#wave-color)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path class="flow" d="M538 191H595V142H652V191H709V142H766V191H823V142H880V191H937V142H994V191H1033" stroke="#FFF0C8" stroke-width="1.3" stroke-linejoin="round"/>
+    <circle class="spark" cx="823" cy="142" r="4.2" fill="#FFF0C8" filter="url(#soft-glow)"/>
+  </g>
+  <text x="535" y="276" fill="#708B83" font-size="7.5" letter-spacing="1.1" class="mono">SINAL SIMULADO · SEM DADOS DE MEDIÇÃO</text>
+  <g transform="translate(1005 269)">
+    <rect width="31" height="4" rx="2" fill="#264541"/>
+    <rect width="20" height="4" rx="2" fill="#73DFD0"/>
+  </g>
+
+  <!-- Botões táteis ilustrativos -->
+  <text x="1110" y="84" fill="#E0E8DC" font-size="10" font-weight="600" letter-spacing=".7">ETAPAS</text>
+  <text x="1110" y="99" fill="#78938A" font-size="7.5" letter-spacing="1.1" class="mono">DA TRAJETÓRIA</text>
+  <g class="control" aria-label="Automação e integração">
+    <circle cx="1122" cy="132" r="13" fill="#081619" stroke="#6E9A8D" stroke-width="1.2"/>
+    <circle class="cap" cx="1122" cy="132" r="9" fill="#1C4140" stroke="#7DDCCC" stroke-opacity=".7"/>
+    <circle class="indicator" cx="1122" cy="132" r="3" fill="#FFC16C"/>
+    <text x="1145" y="135" fill="#E8E9DB" font-size="9.5">Automação</text>
+  </g>
+  <g class="control" aria-label="Hardware e sensores">
+    <circle cx="1122" cy="174" r="13" fill="#081619" stroke="#6E9A8D" stroke-width="1.2"/>
+    <circle class="cap" cx="1122" cy="174" r="9" fill="#1C4140" stroke="#7DDCCC" stroke-opacity=".7"/>
+    <circle class="indicator" cx="1122" cy="174" r="3" fill="#6B9F95"/>
+    <text x="1145" y="177" fill="#C4D0C7" font-size="9.5">Hardware · sensores</text>
+  </g>
+  <g class="control" aria-label="Software embarcado">
+    <circle cx="1122" cy="216" r="13" fill="#081619" stroke="#6E9A8D" stroke-width="1.2"/>
+    <circle class="cap" cx="1122" cy="216" r="9" fill="#1C4140" stroke="#7DDCCC" stroke-opacity=".7"/>
+    <circle class="indicator" cx="1122" cy="216" r="3" fill="#6B9F95"/>
+    <text x="1145" y="219" fill="#C4D0C7" font-size="9.5">Software embarcado</text>
+  </g>
+  <g class="control" aria-label="Testes e validação">
+    <circle cx="1122" cy="258" r="13" fill="#081619" stroke="#6E9A8D" stroke-width="1.2"/>
+    <circle class="cap" cx="1122" cy="258" r="9" fill="#1C4140" stroke="#7DDCCC" stroke-opacity=".7"/>
+    <circle class="indicator" cx="1122" cy="258" r="3" fill="#6B9F95"/>
+    <text x="1145" y="261" fill="#C4D0C7" font-size="9.5">Testes · validação</text>
+  </g>
+
+  <text x="1328" y="308" text-anchor="end" fill="#648079" font-size="7.5" letter-spacing="1.2" class="mono">IMTAVIN <tspan fill="#47625D">/</tspan> EMBEDDED SYSTEMS</text>
+</svg>
